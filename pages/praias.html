@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt_br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praias</title>
+
+    <script
+      src="https://kit.fontawesome.com/ffccd35372.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../styles/css/global.css">
+    <link rel="stylesheet" href="../styles/css/navbar.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <link rel="stylesheet" href="../styles/css/praia.css">
+    <link rel="stylesheet" href="../styles/css/reset.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--limit">
+        <div class="logo">
+          <p class="logo__title">Salisnas's site</p>
+          <i class="fas fa-umbrella-beach logo__icon"></i>
+        </div>
+        
+        <button class="button">
+          <a href="../index.html" class="button__voltar">
+            <i class="fas fa-long-arrow-alt-left"></i> 
+          </a>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="card__icon card__icon--yellow">
+        <i class="fas fa-umbrella-beach"></i>
+      </div>
+      <p>Escolha uma praia</p>
+      <h1 class="page__title">Melhores lugares para se refrescar e curtir!</h1>
+      <div class="praias-box">
+        <div class="praias-img" id="atalaia">
+          <img src="../img/atalaia1.jpg" >
+          <a href="#info-box" class="praia-img__nome">Atalaia</a>
+        </div>
+        <div class="praias-img" id="farol" >
+          <img src="../img/praia-farol.jpg" >
+          <a href="#info-box" class="praia-img__nome">Praia do Farol</a>
+        </div>
+        <div class="praias-img" id="lagoCoca">
+          <img src="../img/lagoa-coca.jpg">
+          <a href="#info-box" class="praia-img__nome">Lagoa da Coca-cola</a>
+        </div>
+      </div>
+    </main>
+    <section class="praia-info" id="info-box">
+      <!-- conteudo será populado dinamicamente consumindo a fake api de informaçoes das praias -->
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__content">
+
+        </div>
+        <p>Lucas Alves - ADS UNAMA </p>
+        <div class="social-midia">
+          <span >
+            <a href="https://github.com/luccasalves" target="_blank">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/luccasalves/" target="blank">
+              <i class="fab fab fa-linkedin-in""></i>
+            </a>
+          </span>
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+  <script src="../js/praias.js" type="module"></script>
+</html>

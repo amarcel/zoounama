@@ -1,0 +1,168 @@
+.wrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 1680px;
+  position: relative;
+}
+
+.show {
+  right: 0;
+}
+
+.remove {
+  display: none;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  padding: 0;
+  color: #ffffff;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.button:hover {
+  color: #20c997;
+}
+
+.button__voltar {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+.button__voltar:hover {
+  color: #20c997;
+}
+
+.button__menu--open, .button__menu--close {
+  display: none;
+  font-size: 28px;
+}
+
+.button_agendar_visita {
+  z-index: 30;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+
+.button_agendar_visita a {
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #20c997 !important;
+  border: solid 1px #20c997;
+  color: #ffffff;
+}
+
+.button_agendar_visita a:hover {
+  background-color: #ffffff !important;
+  color: #20c997;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.button__call-action {
+  background-color: #20c997;
+  padding: 13px 30px;
+  color: #ffffff !important;
+  width: auto;
+  height: auto;
+  border-radius: 5px !important;
+  border: 1px solid #20c997;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.button__call-action:hover {
+  background-color: #212529;
+  border: 1px solid #20c997;
+}
+
+.card__icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #111111;
+}
+
+.card__icon--pink {
+  background-color: #20c997;
+}
+
+.card__icon--yellow {
+  background-color: #F39C12;
+}
+
+.card__icon--aqua {
+  background-color: #22A6B3;
+}
+
+@media (max-width: 775px) {
+  .button__menu--open, .button__menu--close {
+    display: block !important;
+  }
+  .button__menu--close {
+    margin: 25px 0;
+  }
+  .nav-menu {
+    width: 300px;
+    height: 98vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    opacity: 1;
+    z-index: 40px;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    padding: 20px 0;
+    background-color: #212529;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+  }
+  .nav-menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 200px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav-menu ul li {
+    margin: 10px;
+  }
+  .nav-menu ul li a {
+    padding: 10px 20px !important;
+    font-size: 20px;
+  }
+  .carrousel__call-action h1 {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

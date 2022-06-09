@@ -1,0 +1,86 @@
+@import "./global.scss";
+main{
+    padding: 90px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .page__title{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .praias-box{
+
+        @include flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .praias-img{
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+
+            width: 310px;
+            height: 200px;
+            transition: 500ms;
+            margin: 10px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .praia-img__nome{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: absolute;
+                opacity: 0;
+                z-index: 6;
+                top: 0;
+                background: rgba(0,0,0,0.5);
+                color: $light__color;
+                font-size: 28px;
+                font-weight: 700;
+                transition: 500ms;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+                .praia-img__nome{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.praia-info{
+    width: 100%;
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto;
+    padding: 20px 30px;
+    margin-bottom: 90px;
+
+    background-color: $smoth__color;
+
+    h1{
+        margin:90px 0 30px;
+    }
+    p{
+        margin-bottom: 15px ;
+   }
+
+   a{
+       transition: 300ms;
+       &:hover{
+           color: $secondary__color;
+       }
+   }
+} 

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en_US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salinas'site</title>
+
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+
+    <script
+      src="https://kit.fontawesome.com/ffccd35372.js"
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <link rel="stylesheet" href="./styles/css/global.css" />
+    <link rel="stylesheet" href="./styles/css/responsive.css" />
+    <link rel="stylesheet" href="./styles/css/navbar.css" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="./styles/css/reset.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--limit">
+        <div class="logo">
+          <p class="logo__title">Site Salinas</p>
+          <i class="fas fa-umbrella-beach logo__icon"></i>
+        </div>
+        <button class="button button__menu--open">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+          <button class="button button__menu--close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+
+            <li class="nav-menu__item"><a href="#cards">Oque fazer?</a></li>
+            <li class="nav-menu__item"><a href="#map">Como chegar?</a></li>
+            <li class="nav-menu__item"><a href="#saiba-mais">Saiba Mais</a></li>
+            <li class="nav-menu__item"><a href="#gallery">Galeria</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+
+      <button class="button button__go-top">
+        <a href="#">
+          <i class="fas fa-angle-up"></i>
+        </a>
+      </button>
+
+      <section class="section__carrousel">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="./img/ilovesalinas.png" class="d-block" />
+              <div class="carrousel__call-action">
+                <h1>Bem vindo ao Salinas site</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="button">
+                  <a href="#cards" class="button__call-action"">Opçôes do que fazer <i class="fas fa-angle-double-down"></i></a>
+                </button>
+              </div>
+            </div>
+            
+            <div class="carousel-item">
+              <img src="./img/salinas1.jpg" class="d-block" />
+              <div class="carrousel__call-action">
+                <h1>Lagoa da Coca-cola</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="button">
+                  <a href="#cards" class="button__call-action"">Opçôes do que fazer <i class="fas fa-angle-double-down"></i></a>
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="./img/salinas2.jpg" class="d-block" />
+              <div class="carrousel__call-action">
+                <h1>As mais belas praias do Pará</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <button class="button">
+                  <a href="#cards" class="button__call-action"">Opçôes do que fazer <i class="fas fa-angle-double-down"></i></a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    
+      <section class="section__cards" id="cards">
+        <div class="wrapper">
+          <h1 class="section__cards--title">Oque você quer fazer em Salinas?</h1>
+
+        <div class="cards">
+          
+          <a href="https://www.google.com.br/maps/search/Restaurants/@-0.6374935,-47.3439699,13.52z" class="cards__card" target="_blank">
+            <div class="card__icon card__icon--pink">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h4>Saborear</h4>
+            <p>Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy</p>
+            <h5>Clique para conferir <i class="far fa-hand-point-up"></i></h5>
+          </a>
+
+          <a href="./pages/praias.html" class="cards__card " target="_blank">
+            <div class="card__icon card__icon--yellow">
+              <i class="fas fa-umbrella-beach"></i>
+            </div>
+            <h4>Curtir</h4>
+            <p>Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy</p>
+            <h5>Clique para conferir <i class="far fa-hand-point-up"></i></h5>
+          </a>
+
+          <a href="https://www.google.com.br/maps/search/Hotels/@-0.6454259,-47.3346274,13z" class="cards__card" target="_blank">
+            <div class="card__icon card__icon--aqua">
+              <i class="fas fa-bed"></i>
+            </div>
+            <h4>Relaxar</h4>
+            <p>Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy</p>
+            <h5>Clique para conferir <i class="far fa-hand-point-up"></i></h5>
+          </a>
+        </div>
+        </div>
+      </section>
+
+      <section class="section__saiba-mais" id="saiba-mais">
+        <h1 class="mais-sobre__title">Saiba mais sobre salinas nesses outros sites :) </h1>
+        <div class="cards">
+          <a href="https://salinopolis.pa.gov.br/" class="card__item" target="_blank">
+            <div class="icon">
+              <i class="fas fa-landmark"></i>
+            </div>
+            <h3>Prefeitura</h3>
+          </a>
+
+          <a href="https://pt.wikipedia.org/wiki/Salin%C3%B3polis" class="card__item" target="_balnk">
+            <div class="icon"><i class="fas fa-book-open"></i></div>
+            <h3>Wikipedia</h3>
+          </a>
+          
+        </div>
+      </section>
+
+      <section class="section__galeria gallery" id="gallery">
+
+        <p>tour pela galeria</p>
+        <h1>Alguns spots de salinas</h1>
+
+        <div class="gallery--limit">
+          <div class="gallery__item">
+            <img src="./img/atalaia1.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/orla-macarico.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/praia-farol.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/praia-farol2.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/cuidado.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/dunas.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/ilovesalinas.png">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/lagoa-coca.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/lagoa-coca2.jpg">
+          </div>
+          <div class="gallery__item">
+            <img src="./img/lagoacoca.jpg">
+          </div>
+        </div>
+        
+        
+      
+      </section>
+    </div>
+    
+    <section class="section__map" id="map">
+      <h1>Confira aqui a melhor rota <i class="fas fa-map-marked-alt"></i></h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31916.620190278358!2d-47.35821204376488!3d-0.6294893575256666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a89919e306ddf1%3A0x7457f160054cceda!2sSalin%C3%B3polis%2C%20PA!5e0!3m2!1spt-BR!2sbr!4v1629585335521!5m2!1spt-BR!2sbr" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+  </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__content">
+<ul>
+  <h2>Sobre</h2>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor </li>
+  <li>Lorem ipsum solor</li>
+</ul>
+<ul>
+  <h2>links</h2>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor</li>
+</ul>
+<ul>
+  <h2>Suporte</h2>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor</li>
+  <li>Lorem ipsum dolor</li>
+</ul>
+        </div>
+        <p>Lucas Alves - ADS UNAMA </p>
+        <div class="social-midia">
+          <span >
+            <a href="https://github.com/luccasalves" target="_blank">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/luccasalves/" target="blank">
+              <i class="fab fab fa-linkedin-in""></i>
+            </a>
+          </span>
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
+  <script src="./js/botoes.js" type="module"></script>
+  </html>

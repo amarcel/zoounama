@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Unama</title>
+
+    <script
+      src="https://kit.fontawesome.com/ffccd35372.js"
+      crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./styles/css/global.css" />
+    <link rel="stylesheet" href="./styles/css/responsive.css" />
+    <link rel="stylesheet" href="./styles/css/navbar.css" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="./styles/css/reset.css" />
+</head>
+<body>
+    <!-- TODO: O MENU NÃO ESTÁ ABRINDO NO RESPONSIVO -->
+    <header class="header">
+        <div class="header--limit">
+            <div class="logo">
+            <!-- TODO: AUMENTAR UM POUCO A LOGO NO RESPONSIVO -->
+            <a href="index.html">
+                <img class="logo_img" src="/img/logoBranca.svg" alt="logo zoo unama" />
+            </a>
+            </div>
+            <button class="button button__menu--open">
+            <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+            <button class="button button__menu--close">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li class="nav-menu__item"><a href="#quem-somos">Quem somos?</a></li>
+                <li class="nav-menu__item"><a href="#projetos">Projetos</a></li>
+                <li class="nav-menu__item"><a href="#especies">Espécies</a></li>
+                <li class="nav-menu__item"><a href="#cameras">Câmeras</a></li>
+                <li class="nav-menu__item"><a href="#eventos">Eventos</a></li>
+                <li class="nav-menu__item"><a href="#fale-conosco">Fale Conosco</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+
+        <button class="button button_agendar_visita">
+            <a href="#">
+              Agende sua visita&nbsp;&nbsp;<i class="fas fa-calendar"></i>
+            </a>
+        </button>
+    
+        <section class="section__carrousel">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+    
+                <div class="carousel-item active">
+                  <img src="./img/carrossel1.jpg" class="d-block" />
+                  <div class="carrousel__call-action">
+                    
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <img src="./img/salinas1.jpg" class="d-block" />
+                  <div class="carrousel__call-action">
+                    <h1>Lagoa da Coca-cola</h1>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <button class="button">
+                      <a href="#cards" class="button__call-action"">Opçôes do que fazer <i class="fas fa-angle-double-down"></i></a>
+                    </button>
+                  </div>
+                </div>
+    
+                <div class="carousel-item">
+                  <img src="./img/salinas2.jpg" class="d-block" />
+                  <div class="carrousel__call-action">
+                    <h1>As mais belas praias do Pará</h1>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <button class="button">
+                      <a href="#cards" class="button__call-action"">Opçôes do que fazer <i class="fas fa-angle-double-down"></i></a>
+                    </button>
+                  </div>
+                </div>
+    
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+.wrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 1680px;
+  position: relative;
+}
+
+.show {
+  right: 0;
+}
+
+.remove {
+  display: none;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  padding: 0;
+  color: #ffffff;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.button:hover {
+  color: #20c997;
+}
+
+.button__voltar {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+.button__voltar:hover {
+  color: #20c997;
+}
+
+.button__menu--open, .button__menu--close {
+  display: none;
+  font-size: 28px;
+}
+
+.button_agendar_visita {
+  z-index: 30;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+
+.button_agendar_visita a {
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #20c997 !important;
+  border: solid 1px #20c997;
+  color: #ffffff;
+}
+
+.button_agendar_visita a:hover {
+  background-color: #ffffff !important;
+  color: #20c997;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.button__call-action {
+  background-color: #20c997;
+  padding: 13px 30px;
+  color: #ffffff !important;
+  width: auto;
+  height: auto;
+  border-radius: 5px !important;
+  border: 1px solid #20c997;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.button__call-action:hover {
+  background-color: #212529;
+  border: 1px solid #20c997;
+}
+
+.card__icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #111111;
+}
+
+.card__icon--pink {
+  background-color: #20c997;
+}
+
+.card__icon--yellow {
+  background-color: #F39C12;
+}
+
+.card__icon--aqua {
+  background-color: #22A6B3;
+}
+
+main {
+  padding: 90px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .page__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+main .praias-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .praias-box .praias-img {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  width: 310px;
+  height: 200px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin: 10px;
+}
+
+main .praias-box .praias-img img {
+  width: 100%;
+  height: 100%;
+}
+
+main .praias-box .praias-img .praia-img__nome {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  z-index: 6;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+main .praias-box .praias-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main .praias-box .praias-img:hover .praia-img__nome {
+  opacity: 1;
+}
+
+.praia-info {
+  width: 100%;
+  max-width: 1000px;
+  text-align: justify;
+  margin: auto;
+  padding: 20px 30px;
+  margin-bottom: 90px;
+  background-color: #e3eaf1;
+}
+
+.praia-info h1 {
+  margin: 90px 0 30px;
+}
+
+.praia-info p {
+  margin-bottom: 15px;
+}
+
+.praia-info a {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.praia-info a:hover {
+  color: #20c997;
+}
+/*# sourceMappingURL=praia.css.map */

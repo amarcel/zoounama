@@ -1,0 +1,125 @@
+$primary__color:#212529;
+$secondary__color:#20c997;
+$detail__color--1:#F39C12;
+$detail__color--2:#22A6B3;
+$smoth__color:#e3eaf1;
+$light__color:#ffffff;
+$txt__color: #404040;
+$txt__color--slim:#777;
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+
+@mixin width-limit {
+    width: 100%;
+    max-width: 1680px;
+}
+
+
+.wrapper{
+    margin: auto;
+    @include width-limit;
+    position: relative;
+
+}
+
+.show{
+    right: 0;
+   }
+.remove{
+    display: none;
+}
+
+
+
+.button{
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    background:none;
+    padding: 0;
+    color: $light__color;
+    transition: 200ms;
+    &:hover{
+        color: $secondary__color
+    }
+}
+
+.button__voltar{
+    color: $light__color;
+    font-size: 22px;
+    font-weight: 700;
+    transition: 300ms;
+    padding: 20px;
+
+    &:hover{
+        color: $secondary__color;
+    }
+}
+
+.button__menu--open, .button__menu--close{
+    display: none;
+    font-size: 28px;
+}
+.button_agendar_visita{
+    z-index: 30;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    a{
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: $secondary__color !important;
+        border: solid 1px $secondary__color;
+        color: $light__color;
+
+        &:hover{
+            background-color: $light__color !important;
+            color: $secondary__color;
+            transition: 700ms;
+        }
+        
+    }
+
+}
+
+.button__call-action{
+    background-color: $secondary__color;
+    padding: 13px 30px;
+    color: $light__color !important;
+    width: auto;
+    height: auto;
+    border-radius: 5px !important;
+    border: 1px solid $secondary__color;
+    transition: 300ms;
+
+    &:hover{
+        background-color: $primary__color;
+        border: 1px solid $secondary__color;
+    }
+}
+
+.card__icon{
+    width: 90px;
+    height: 90px;
+    
+    margin-bottom: 30px;
+    border-radius: 50%;
+    font-size:28px ;
+    @include flex;
+    justify-content: center;
+    color: rgb(17, 17, 17);
+    
+}
+
+.card__icon--pink{
+    background-color: $secondary__color;
+}
+.card__icon--yellow{
+    background-color: $detail__color--1;
+}
+.card__icon--aqua{
+        background-color: $detail__color--2;
+}
