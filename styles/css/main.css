@@ -12081,14 +12081,13 @@ fieldset:disabled .btn {
   overflow: hidden;
   margin: auto;
   position: relative;
+  width: 80%;
 }
 
 .section__carrousel img {
   width: 100%;
   height: 640px;
-  margin-top: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding-top: 300px;
 }
 
 .section__carrousel .carrousel__call-action {
