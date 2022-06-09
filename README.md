@@ -1,4 +1,4 @@
-# zoo-unam
+# zoo-unama
 
 ## instruções para rodar o projeto em sua maquina
 - instale o bootstrap com npm ou yarn 
