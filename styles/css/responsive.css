@@ -1,3 +1,15 @@
+.bg-especie {
+  background-color: #3d573b;
+}
+
+.bg-projeto {
+  background-color: #619c52;
+}
+
+.bg-eventos {
+  background-color: #3d573b;
+}
+
 .wrapper {
   margin: auto;
   width: 100%;
@@ -13,24 +25,6 @@
   display: none;
 }
 
-.button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: none;
-  padding: 0;
-  color: #ffffff;
-  -webkit-transition: 200ms;
-  transition: 200ms;
-}
-
-.button:hover {
-  color: #20c997;
-}
-
 .button__voltar {
   color: #ffffff;
   font-size: 22px;
@@ -41,10 +35,11 @@
 }
 
 .button__voltar:hover {
-  color: #20c997;
+  color: #3d573b;
 }
 
-.button__menu--open, .button__menu--close {
+.button__menu--open,
+.button__menu--close {
   display: none;
   font-size: 28px;
 }
@@ -56,36 +51,21 @@
   right: 30px;
 }
 
-.button_agendar_visita a {
-  padding: 15px 20px;
-  border-radius: 5px;
-  background-color: #20c997 !important;
-  border: solid 1px #20c997;
-  color: #ffffff;
-}
-
-.button_agendar_visita a:hover {
-  background-color: #ffffff !important;
-  color: #20c997;
-  -webkit-transition: 700ms;
-  transition: 700ms;
-}
-
 .button__call-action {
-  background-color: #20c997;
+  background-color: #3d573b;
   padding: 13px 30px;
   color: #ffffff !important;
   width: auto;
   height: auto;
   border-radius: 5px !important;
-  border: 1px solid #20c997;
+  border: 1px solid #3d573b;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
 
 .button__call-action:hover {
   background-color: #212529;
-  border: 1px solid #20c997;
+  border: 1px solid #3d573b;
 }
 
 .card__icon {
@@ -107,15 +87,15 @@
 }
 
 .card__icon--pink {
-  background-color: #20c997;
+  background-color: #3d573b;
 }
 
 .card__icon--yellow {
-  background-color: #F39C12;
+  background-color: #f39c12;
 }
 
 .card__icon--aqua {
-  background-color: #22A6B3;
+  background-color: #22a6b3;
 }
 
 @media (max-width: 775px) {
