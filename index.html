@@ -11,14 +11,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="./styles/css/global.css" />
-    <link rel="stylesheet" href="./styles/css/responsive.css" />
-    <link rel="stylesheet" href="./styles/css/navbar.css" />
     <link rel="stylesheet" href="./styles/css/main.css" />
     <link rel="stylesheet" href="./styles/css/reset.css" />
   </head>
   <body>
-    <!-- TODO: O MENU NÃO ESTÁ ABRINDO NO RESPONSIVO -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="/" title="Home">
@@ -81,56 +77,57 @@
     </header>
     <div class="wrapper container position-relative">
       <button
-        class="btn btn-success position-fixed bottom-0 end-0 my-5 mx-5 p-3"
+        class="btn btn-success position-fixed bottom-0 end-0 my-5 mx-5 p-3" style="z-index: 30"
       >
         Agende sua visita&nbsp;&nbsp;<i class="fas fa-calendar"></i>
       </button>
 
-      <section
-        id="carouselExampleControls"
-        class="carousel slide "
-        data-bs-ride="carousel"
-      >
+      <section id="carrosselTopo" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrosselTopo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+          <button type="button" data-bs-target="#carrosselTopo" data-bs-slide-to="1" aria-label="Foto 2"></button>
+          <button type="button" data-bs-target="#carrosselTopo" data-bs-slide-to="2" aria-label="Foto 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               src="./img/carrossel1.jpg"
               class="d-block w-100 active pt-5"
-              alt="..."
+              alt="Foto de médica veterinária e arara azul."
             />
           </div>
           <div class="carousel-item">
             <img
               src="./img/carrossel2.png"
               class="d-block w-100 pt-5"
-              alt="..."
+              alt="Foto de visitantes no zoológico."
             />
           </div>
           <div class="carousel-item">
             <img
               src="./img/carrossel3.png"
               class="d-block w-100 pt-5"
-              alt="..."
+              alt="Foto do jacaré do zoológico."
             />
           </div>
         </div>
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#carrosselTopo"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#carrosselTopo"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Próxima</span>
         </button>
       </section>
 
@@ -139,7 +136,7 @@
 
         <div class="row">
           <div class="col-sm">
-            <img src="./img/img01.png" alt="image" class="d-block w-100 pt-5"/>
+            <img src="./img/img01.png" alt="Foto de funcionários do parque com bicho preguiça." class="d-block w-100 pt-5"/>
           </div>
 
           <div class="col-sm">
@@ -167,10 +164,11 @@
         </div>
       </section>
 
-      <section id="especies" class="bg-especie text-white">
-        <div class="container py-5 mx-5">
-          <h1 class="text-center pb-5">Espécies</h1>
+      <section id="especies" class="bg-especie text-white py-5">
+        <h1 class="text-center">Espécies</h1>
 
+        <div class="container py-5 mx-5">
+          
           <div class="row">
             <div class="col-sm">
               <h3>Onça-pintada</h3>
@@ -197,15 +195,16 @@
             </div>
 
             <div class="col-sm">
-              <img src="./img/img-especies01.png" alt="image" class="d-block w-75 pt-5"/>
+              <img src="./img/img-especies01.png" alt="Foto da onça pintada." class="d-block w-75 pt-5"/>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="projetos" class="bg-projeto text-white">
+      <section id="projetos" class="bg-projeto text-white py-5">
+        <h1 class="text-center">Projetos</h1>
+
         <div class="container py-5 mx-5">
-          <h1 class="text-center pb-5">Projetos</h1>
 
           <div class="row">
             <div class="col-sm">
@@ -227,17 +226,17 @@
             </div>
 
             <div class="col-sm">
-              <img src="./img/img-peixe-boi.png" alt="image" class="d-block w-75 pt-5"/>
+              <img src="./img/img-peixe-boi.png" alt="Foto de funcionário alimentando o peixe boi." class="d-block w-75 pt-5"/>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="cameras" class="text-center">
-        <h1 class="text-center my-5">Câmeras</h1>
+      <section id="cameras" class="text-center py-5">
+        <h1 class="text-center">Câmeras</h1>
 
         <div class="d-flex align-content-center justify-content-center">
-          <img src="./img/img-especies01.png" alt="XX" class="d-block w-50 pt-5"/>
+          <img src="./img/img-especies01.png" alt="Câmeras em breve." class="d-block w-50 pt-5"/>
         </div>
 
         <div>
@@ -248,16 +247,16 @@
         </div>
       </section>
 
-      <section id="eventos" class="bg-eventos text-white">
+      <section id="eventos" class="bg-eventos text-white py-5">
+        <h1 class="text-center">Eventos</h1>
         <div class="container py-5 mx-5">
-          <h1 class="text-center my-5">Eventos</h1>
 
           <div class="row">
             <div class="col-sm">
               <img
                 class="w-75"
                 src="https://bacananews.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-28-at-15.09.26.jpeg"
-                alt="image"
+                alt="Evento sobre serpentes."
               />
             </div>
 
@@ -291,8 +290,8 @@
         </div>
       </section>
 
-      <section id="depoimentos" class="bg-projeto">
-        <div class="container py-5">
+      <section id="depoimentos" class="bg-projeto py-5">
+        <div class="container">
           <h1 class="text-white text-center pb-5">Depoimentos</h1>
 
           <div class="container bg-white rounded-3 w-75 h-100 p-5">
@@ -308,9 +307,9 @@
         </div>
       </section>
 
-      <section id="fale-conosco" class="bg-dark text-white">
-        <div class="container py-5">
-          <h1 class="text-center pb-5">Como chegar ao ZOOUNAMA</h1>
+      <section id="fale-conosco" class="bg-dark text-white py-5">
+        <h1 class="text-center pb-5">Como chegar ao ZOOUNAMA</h1>
+        <div class="container">
 
           <div class="row">
             <div class="col-sm">
