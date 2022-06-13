@@ -1,3 +1,5 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 $dark-green: #3d573b;
 $light-green: #619c52;
 
@@ -11,4 +13,16 @@ $light-green: #619c52;
 
 .bg-eventos {
   background-color: $dark-green;
+}
+
+.bg-cinza {
+  background-color: #f6f6f6;
+}
+
+.icones-contato {
+  font-size: 24pt;
+}
+
+.canto-arredondado {
+  border-radius: 32px;
 }
