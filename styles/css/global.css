@@ -11962,7 +11962,7 @@ fieldset:disabled .btn {
 }
 
 .bg-projeto {
-  background-color: #619c52;
+  background-color: #619C52;
 }
 
 .bg-eventos {
@@ -11979,5 +11979,10 @@ fieldset:disabled .btn {
 
 .canto-arredondado {
   border-radius: 32px;
+}
+
+.container_img {
+  position: absolute;
+  z-index: 1;
 }
 /*# sourceMappingURL=global.css.map */

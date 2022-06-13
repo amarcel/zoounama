@@ -1,7 +1,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 $dark-green: #3d573b;
-$light-green: #619c52;
+$light-green: #619C52;
 
 .bg-especie {
   background-color: $dark-green;
@@ -25,4 +25,9 @@ $light-green: #619c52;
 
 .canto-arredondado {
   border-radius: 32px;
+}
+
+.container_img {
+  position: absolute;
+  z-index: 1;
 }
