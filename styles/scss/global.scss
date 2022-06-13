@@ -1,7 +1,7 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 $dark-green: #3d573b;
-$light-green: #619C52;
+$light-green: #619c52;
 
 .bg-especie {
   background-color: $dark-green;
@@ -29,5 +29,15 @@ $light-green: #619C52;
 
 .container_img {
   position: absolute;
+  top: -20px;
+  left: -40px;
   z-index: 1;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
 }
