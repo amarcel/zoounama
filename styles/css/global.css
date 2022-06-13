@@ -1,9 +1,22 @@
 .bg-especie {
   background-color: #3d573b;
+  background-image: url("../../img/outros/pintas.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.bg-especie a:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .bg-projeto {
   background-color: #619c52;
+}
+
+.bg-projeto a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .bg-eventos {

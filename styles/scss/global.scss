@@ -3,10 +3,23 @@ $light-green: #619c52;
 
 .bg-especie {
   background-color: $dark-green;
+  background-image: url("../../img/outros/pintas.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 
 .bg-projeto {
   background-color: $light-green;
+
+  a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 
 .bg-eventos {
