@@ -13,9 +13,13 @@
 
     <link rel="stylesheet" href="./styles/css/global.css" />
     <link rel="stylesheet" href="./styles/css/reset.css" />
+    <link rel="stylesheet" href="./styles/css/global.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+
+  <body class="position-relative">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark static-top position-fixed top-0 start-0 w-100"
+    >
       <div class="container">
         <a class="navbar-brand" href="/" title="Home">
           <img src="./img/logoBranca.svg" alt="Logo" height="60" />
@@ -64,7 +68,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#fale-conosco">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#fale-conosco"
+              >
                 Fale Conosco
               </a>
             </li>
@@ -72,22 +80,43 @@
         </div>
       </div>
     </nav>
-      
- 
-    </header>
-    <div class="wrapper container position-relative">
+
+    <div class="wrapper container position-relative w-100">
       <button
-        class="btn btn-success position-fixed bottom-0 end-0 my-5 mx-5 p-3" style="z-index: 30"
+        class="btn btn-success position-fixed bottom-0 end-0 my-5 mx-5 p-3 rounded-pill"
+        style="z-index: 30"
       >
         Agende sua visita&nbsp;&nbsp;<i class="fas fa-calendar"></i>
       </button>
 
-      <section id="carrosselTopo" class="carousel slide " data-bs-ride="carousel">
+      <section
+        id="carrosselTopo"
+        class="carousel slide pt-5"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carrosselTopo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
-          <button type="button" data-bs-target="#carrosselTopo" data-bs-slide-to="1" aria-label="Foto 2"></button>
-          <button type="button" data-bs-target="#carrosselTopo" data-bs-slide-to="2" aria-label="Foto 3"></button>
+          <button
+            type="button"
+            data-bs-target="#carrosselTopo"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Foto 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carrosselTopo"
+            data-bs-slide-to="1"
+            aria-label="Foto 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carrosselTopo"
+            data-bs-slide-to="2"
+            aria-label="Foto 3"
+          ></button>
         </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -96,6 +125,7 @@
               alt="Foto de médica veterinária e arara azul."
             />
           </div>
+
           <div class="carousel-item">
             <img
               src="./img/carrossel2.png"
@@ -103,6 +133,7 @@
               alt="Foto de visitantes no zoológico."
             />
           </div>
+
           <div class="carousel-item">
             <img
               src="./img/carrossel3.png"
@@ -111,6 +142,7 @@
             />
           </div>
         </div>
+
         <button
           class="carousel-control-prev"
           type="button"
@@ -120,6 +152,7 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
+
         <button
           class="carousel-control-next"
           type="button"
@@ -136,7 +169,11 @@
 
         <div class="row">
           <div class="col-sm">
-            <img src="./img/img01.png" alt="Foto de funcionários do parque com bicho preguiça." class="d-block w-100"/>
+            <img
+              src="./img/img01.png"
+              alt="Foto de funcionários do parque com bicho preguiça."
+              class="d-block w-100 pt-5"
+            />
           </div>
 
           <div class="col-sm">
@@ -157,8 +194,8 @@
               comunitárias a fim de estabelecer uma educação ambiental aos
             </p>
 
-            <button class="btn btn-success my-5 p-3">
-              Agende uma visita <i class="fas fa-calendar"></i>
+            <button class="btn btn-success rounded-pill my-5">
+              Agendar uma visita <i class="fas fa-calendar"></i>
             </button>
           </div>
         </div>
@@ -167,41 +204,330 @@
       <section id="especies" class="bg-especie text-white py-5">
         <h1 class="text-center">Espécies</h1>
 
-        <div class="container py-5 mx-5">          
+        <div class="container py-5 mx-5">
           <div class="row">
             <div class="col-sm">
               <h3>Onça-pintada</h3>
 
               <div class="w-75" >
                 <p class="my-3">
-                As maiores onças-pintadas são encontradas no Pantanal.
-                Onças-pintadas apresentam dois padrões de pelagem, sendo o mais
-                conhecido a coloração amarelada com rosetas pretas. São
-                caçadoras oportunistas e são estritamente carnívoras.
-                Ocasionalmente, as onças-pintadas se alimentam de animais
-                domésticos. Atualmente, a onça-pintada está classificada na
-                Lista Vermelha da União Internacional Para Conservação da
-                Natureza e dos Recursos Naturais (IUCN) como quase ameaçada de
-                extinção.
-              </p>
+                  As maiores onças-pintadas são encontradas no Pantanal.
+                  Onças-pintadas apresentam dois padrões de pelagem, sendo o
+                  mais conhecido a coloração amarelada com rosetas pretas. São
+                  caçadoras oportunistas e são estritamente carnívoras.
+                  Ocasionalmente, as onças-pintadas se alimentam de animais
+                  domésticos. Atualmente, a onça-pintada está classificada na
+                  Lista Vermelha da União Internacional Para Conservação da
+                  Natureza e dos Recursos Naturais (IUCN) como quase ameaçada de
+                  extinção.
+                </p>
               </div>
 
               <div class="py-5">
-                <a href="#" class="text-white text-decoration-underline"
-                  >Conheça as espécies</a
-                >
+                <a href="#" class="text-white">Conheça as espécies</a>
               </div>
             </div>
 
             <div class="col-sm">
-              <img src="./img/img-especies01.png" alt="Foto da onça pintada." class="d-block w-75 pt-5"/>
+              <div
+                id="carousel01Indicators"
+                class="carousel slide carousel-fade w-75"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel01Indicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel01Indicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel01Indicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./img/animais/onça/onça01.png"
+                      class="d-block w-100"
+                      alt="onça"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/animais/onça/onca02.png"
+                      class="d-block w-100"
+                      alt="onça"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./img/animais/onça/onca03.png"
+                      class="d-block w-100"
+                      alt="onça"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel01Indicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel01Indicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <!--
+
+            <div class="carousel-item active">
+              <div class="container py-5 mx-5">
+                <div class="row">
+                  <div class="col-sm">
+                    <h3>Anta</h3>
+
+                    <div class="w-75">
+                      <p class="my-3">
+                        A anta é o maior mamífero do Brasil, mas todo esse
+                        tamanho não evitou que a espécie estivesse em risco.
+                        Distribuída pela maior parte do país e grande parte da
+                        Américado Sul, a anta enfrenta a perda de habitat e tem
+                        se tornado rara nos biomas onde ainda é encontrada:
+                        Amazônia, Mata Atlântica, Cerrado e Pantanal.
+                      </p>
+                    </div>
+
+                    <div class="py-5">
+                      <a href="#" class="text-white">Conheça as espécies</a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm">
+                    <div
+                      id="carousel02Indicators"
+                      class="carousel slide carousel-fade w-75"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carousel02Indicators"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carousel02Indicators"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carousel02Indicators"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/animais/anta/anta01.png"
+                            class="d-block w-100"
+                            alt="anta"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/animais/anta/anta02.png"
+                            class="d-block w-100"
+                            alt="anta"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/animais/anta/anta03.png"
+                            class="d-block w-100"
+                            alt="anta"
+                          />
+                        </div>
+                      </div>
+
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel02Indicators"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel02Indicators"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container py-5 mx-5">
+                <div class="row">
+                  <div class="col-sm">
+                    <h3>Preguiça-real</h3>
+
+                    <div class="w-75">
+                      <p class="my-3">
+                        O bicho-preguiça é um animal que faz parte da superordem
+                        Xenarthra, um grupo que apresenta como característica
+                        mais marcante a presença de articulações extras nas
+                        vértebras lombares, as quais são ausentes nos outros
+                        mamíferos. Esses animais são mamíferos eutérios, ou
+                        seja, apresentam placentas complexas que garantem o
+                        desenvolvimento embrionário do filhote dentro do útero
+                        da mãe.
+                      </p>
+                    </div>
+
+                    <div class="py-5">
+                      <a href="#" class="text-white">Conheça as espécies</a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm">
+                    <div
+                      id="carousel03Indicators"
+                      class="carousel slide carousel-fade w-75"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carousel03Indicators"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carousel03Indicators"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carousel03Indicators"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/animais/preguiça/preguica01.png"
+                            class="d-block w-100"
+                            alt="preguiça"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/animais/preguiça/preguica02.png"
+                            class="d-block w-100"
+                            alt="preguiça"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/animais/preguiça/preguica03.png"
+                            class="d-block w-100"
+                            alt="preguiça"
+                          />
+                        </div>
+                      </div>
+
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel03Indicators"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel03Indicators"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
       </section>
 
       <section id="projetos" class="bg-projeto text-white py-5">
         <h1 class="text-center projetos__title">Projetos</h1>
+
 
         <div class="container py-5 mx-5 position-relative">
 
@@ -219,15 +545,15 @@
                 degradação ambiental.
               </p>
 
-              <div class="py-5">
-                <a href="#" class="text-white text-decoration-underline"
-                  >Saiba mais</a
-                >
+                  <div class="col-sm">
+                    <img
+                      src="./img/animais/peixe-boi/peixe-boi01.png"
+                      alt="Foto de funcionário alimentando o peixe boi."
+                      class="d-block w-75 pt-5"
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class="col-sm">
-              <img src="./img/img-peixe-boi.png" alt="Foto de funcionário alimentando o peixe boi." class="d-block w-75 pt-5"/>
             </div>
           </div>
         </div>
@@ -237,7 +563,11 @@
         <h1 class="text-center">Câmeras</h1>
 
         <div class="d-flex align-content-center justify-content-center">
-          <img src="./img/img-especies01.png" alt="Câmeras em breve." class="d-block w-50 pt-5"/>
+          <img
+            src="./img/animais/onça/onça01.png"
+            alt="Câmeras em breve."
+            class="d-block w-50 pt-5"
+          />
         </div>
 
         <div>
@@ -250,42 +580,71 @@
 
       <section id="eventos" class="bg-eventos text-white py-5">
         <h1 class="text-center">Eventos</h1>
-        <div class="container py-5 mx-5">
 
-          <div class="row">
-            <div class="col-sm">
-              <img
-                class="w-75"
-                src="https://bacananews.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-28-at-15.09.26.jpeg"
-                alt="Evento sobre serpentes."
-              />
-            </div>
+        <div
+          id="carouselEveIndicators"
+          class="container carousel slide py-5 mx-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm">
+                  <img
+                    class="w-75"
+                    src="https://bacananews.com.br/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-28-at-15.09.26.jpeg"
+                    alt="Evento sobre serpentes."
+                  />
+                </div>
 
-            <div class="col-sm">
-              <ul class="row w-75">
-                <li class="col-sm">
-                  <img src="./img/calendar.svg" alt="XX" />
-                  <span>10/06</span>
-                </li>
+                <div class="col-sm">
+                  <ul class="row w-75">
+                    <li class="col-sm">
+                      <img src="./img/calendar.svg" alt="XX" />
+                      <span>10/06</span>
+                    </li>
 
-                <li class="col-sm">
-                  <img src="./img/clock.svg" alt="XX" />
-                  <span>10:00</span>
-                </li>
+                    <li class="col-sm">
+                      <img src="./img/clock.svg" alt="XX" />
+                      <span>10:00</span>
+                    </li>
 
-                <li class="col-sm">
-                  <img src="./img/map-pin.svg" alt="XX" />
-                  <span>Área dos macacos</span>
-                </li>
-              </ul>
-              <p class="my-3">
-                Evento desvenda os segredos das enigmáticas serpentes -
-                Bacana.news Notícias do Pará (bacananews.com.br)
-              </p>
+                    <li class="col-sm">
+                      <img src="./img/map-pin.svg" alt="XX" />
+                      <span>Área dos macacos</span>
+                    </li>
+                  </ul>
+                  <p class="my-3">
+                    Evento desvenda os segredos das enigmáticas serpentes -
+                    Bacana.news Notícias do Pará (bacananews.com.br)
+                  </p>
 
-              <a href="#">Saiba mais...</a>
+                  <button class="btn btn-success rounded-pill my-5">
+                    Agendar uma visita <i class="fas fa-calendar"></i>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselEveIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselEveIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
 
@@ -293,15 +652,84 @@
         <div class="container">
           <h1 class="text-white text-center pb-5">Depoimentos</h1>
 
-          <div class="container bg-white canto-arredondado w-75 h-100 p-5">
-            <p>
-              Lygia, 17 Dezembro de 2019 21:55, Trabalho de recuperação de
-              animais vulneráveis, respeito à fauna.
-            </p>
+          <div
+            id="carouselDepoimentosIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container bg-white rounded-3 w-75 h-100 p-5">
+                  <p>
+                    Lygia, 17 Dezembro de 2019 21:55, Trabalho de recuperação de
+                    animais vulneráveis, respeito à fauna.
+                  </p>
 
-            <p>Os peixes boi são tratados com especial carinho,</p>
+                  <p>Os peixes boi são tratados com especial carinho,</p>
 
-            <p>https://brazilfirmas.com/para/zoounama-1004779</p>
+                  <p>https://brazilfirmas.com/para/zoounama-1004779</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container bg-white rounded-3 w-75 h-100 p-5">
+                  <p>Adenor, 06 Dezembro de 2019 19:01,</p>
+
+                  <p>
+                    Ótimo para que conhecer os bichos da nossa região. Precisa
+                    mais de investimentos para que possa melhora. Mas, sem
+                    dúvidas que minha filha de um ano adorou. Principalmente as
+                    Araras soltas.
+                  </p>
+
+                  <p>https://brazilfirmas.com/para/zoounama-1004779</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container bg-white rounded-3 w-75 h-100 p-5">
+                  <p>Julia, 05 Dezembro de 2019 16:14,</p>
+
+                  <p>
+                    Super recomendo a visitação, foi uma experiência única, o
+                    zoo é particular, não recebe ajuda nenhuma do governo, e os
+                    animais ali mantidos, são animais resgatados, devido alguma
+                    maldade humana, os que conseguem voltam pra natureza, e os
+                    que estao no zoo infelizmente não tiveram condições de
+                    voltar ao seu habitat natural, e a experiência do beixe boi
+                    de dar de mama pra eles foi a experiência mais linda que
+                    vivi.
+                  </p>
+
+                  <p>https://brazilfirmas.com/para/zoounama-1004779</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselDepoimentosIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselDepoimentosIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </section>
@@ -309,7 +737,6 @@
       <section id="fale-conosco" class="bg-dark text-white py-5">
         <h1 class="text-center pb-5">Como chegar ao ZOOUNAMA</h1>
         <div class="container">
-
           <div class="row">
             <div class="col-sm">
               <iframe
@@ -319,6 +746,7 @@
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                class="w-75"
               ></iframe>
             </div>
 
